@@ -71,7 +71,7 @@ button{
 /* tablet */
 @media (min-width: 375px) and (max-width: 904px) {
     .container{
-        height: 90%;
+        height: 50%;
         width: 90%;
         grid-template-rows: 1fr 2fr;
         margin-left: auto;
@@ -82,7 +82,7 @@ button{
         height: 100%;
         width: 100%;
         max-width: 600px;
-        max-height: 400px;
+        max-height: 350px;
         border-radius: 20px;
         object-fit: cover;
         margin-left: auto;
@@ -104,7 +104,7 @@ button{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         max-width: 905px;
-        min-height: 60%;
+        min-height: 70%;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -126,5 +126,15 @@ button{
         flex-direction: column;
         justify-content: center;
         align-self: center;
+    }
+    h1{
+        font-size: 56px;
+        padding: 1rem 0;
+    }
+    ul{
+        font-size: 16px;
+    }
+    input{
+        text-indent: 1rem;
     }
 }

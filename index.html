@@ -19,9 +19,12 @@
         <li><img src="./assets/images/icon-list.svg" class="li_icon"/><p class="li_text">And much more</p></li>
       </ul>
       <form>
-        <label for="email">Email address</label>
-        <input type="email" name="email" placeholder="email@company.com" />
-        <button type="submit" name="submit_button">Subscribe to monthly newsletter</button>
+        <div class="labels">
+          <label for="email">Email address</label>
+          <label class="error_message" for="email">Valid email required</label>
+        </div>
+        <input type="text" class="email" name="email" placeholder="email@company.com" data-valid="true"/>
+        <button type="submit" class="submit" name="submit_button">Subscribe to monthly newsletter</button>
       </form>
     </div>
   </div>

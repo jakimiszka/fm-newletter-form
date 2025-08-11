@@ -18,7 +18,7 @@ html,body{
 }
 
 .container{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     gap: 2rem;  
@@ -116,21 +116,64 @@ button{
     margin-bottom: 0.5rem;
 }
 
-.modal{
-    display: none;
+.modal {
+    position: relative;
+    width: 100%;
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
 }
-
+.modal_wrapper{
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.modal_img{
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.modal_button{
+    width: 100%;
+    min-width: 100px;
+    height: 3rem;
+    border-radius: 10px;
+    border: 0 solid transparent;
+    background-color: #242742;
+    color:#fff;
+    font-family: roboto-bold, sans-serif;
+    margin-top: 1rem;
+}
 /* tablet */
 @media (min-width: 375px) and (max-width: 904px) {
     body{
         background-color: #37384E;
+    }
+    .modal{
+        max-width: 70%;
+        width: auto;
+        height: auto;
+        padding: 4rem;
     }
     .container{
         position: relative;
         height: auto;
         width: 80%;
 
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -168,9 +211,15 @@ button{
     body{
         background-color: #37384E;
     }
+    .modal{
+        width: 600px;
+        height: auto;
+        max-width: 60%;
+        padding: 4rem;
+    }
     .container{
         position: relative;
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0;

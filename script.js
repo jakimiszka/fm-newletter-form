@@ -15,10 +15,11 @@ function handleSubmit(e) {
     data[field.name] = field.value;
   }
   if (!validateEmail(data.email)) {
-    errrorMessage.style.display = "block"; // toggle with data-attr
+    errrorMessage.style.display = "block"; // toggle with data-attr?
     emailInput.value = "";
     return;
   } else {
+    errrorMessage.style.display = "none";
     alert("Newsletter subscription successful!");
     return;
   }

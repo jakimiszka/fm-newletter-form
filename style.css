@@ -195,7 +195,7 @@ input:focus::placeholder{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: space-between;
         background-color: #fff;
         padding: 1rem;
         border-radius: 20px;
@@ -219,7 +219,6 @@ input:focus::placeholder{
     }
     .list_title{
         font-size: 16px;
-        margin-bottom: 1rem;
     }
     ul li{
         font-size: 14px;
@@ -228,6 +227,9 @@ input:focus::placeholder{
     }
     input{
         text-indent: 1rem;
+    }
+    form{
+        margin: 0;
     }
 }
 

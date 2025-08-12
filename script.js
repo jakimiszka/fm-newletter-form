@@ -19,8 +19,6 @@ function handleSubmit(e) {
   }
 }
 
-form.addEventListener("submit", handleSubmit);
-
 function validateInput() {
   const data = emailInput.value;1
   if (!validateEmail(data)) {
@@ -33,6 +31,8 @@ function validateInput() {
     errrorMessage.style.display = "none";
   }
 }
+
+form.addEventListener("submit", handleSubmit);
 
 modal_button.addEventListener("click", () => {
     card.style.display = "grid";

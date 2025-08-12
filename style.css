@@ -196,7 +196,7 @@ input:focus::placeholder{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-content: center;
         background-color: #fff;
         padding: 1rem;
         border-radius: 20px;
@@ -213,9 +213,13 @@ input:focus::placeholder{
         object-fit: cover;
     }
     .content{
+        height: 100%;
         width: 100%;
         max-width: 600px;
         background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .list_title{
         font-size: 16px;
@@ -270,11 +274,10 @@ input:focus::placeholder{
     }   
     .content{
         order: 1;
-        margin: 2rem;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-self: center;
+        justify-content: center;
     }
     h1{
         font-size: 56px;

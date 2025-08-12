@@ -18,7 +18,7 @@ html,body{
 }
 
 .container{
-    display: none;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     gap: 2rem;  
@@ -116,11 +116,29 @@ button{
     margin-bottom: 0.5rem;
 }
 
+input:focus{
+    outline: none;
+    border: 1px solid #949494;
+    color: #949494;
+    background-color: white;
+}
+input:focus::placeholder{
+    color: #949494;
+}
+.error_input{
+    border: 1px solid red;
+    background-color: #FFE8E6;
+    color: red;
+}
+.invalid_placeholder::placeholder{
+    color: red;
+}
+
 .modal {
     position: relative;
     width: 100%;
     height: 80%; 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
@@ -163,6 +181,7 @@ button{
         background-color: #37384E;
     }
     .modal{
+        display: none;
         max-width: 70%;
         width: auto;
         height: auto;
@@ -173,7 +192,7 @@ button{
         height: auto;
         width: 80%;
 
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -212,6 +231,7 @@ button{
         background-color: #37384E;
     }
     .modal{
+        display: none;
         width: 600px;
         height: auto;
         max-width: 60%;
@@ -219,13 +239,11 @@ button{
     }
     .container{
         position: relative;
-        display: none;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0;
-        max-width: 1400px;
-        min-width: 905px;
-        width: 80%;
+        max-width: 905px;
         min-height: 80%;
         margin-left: auto;
         margin-right: auto;

@@ -16,6 +16,8 @@ function handleSubmit(e) {
   if (!validateEmail(email) === false) {
     card.style.display = "none";
     modal.style.display = "flex";
+  }else{
+    validateInput();
   }
 }
 
